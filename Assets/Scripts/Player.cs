@@ -1,7 +1,9 @@
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Player : MonoBehaviour
 {
+    [SerializeField] Text _pointText;
     private Rigidbody _rigidbody;
     private int _totalScore = 0;
 
@@ -13,8 +15,9 @@ public class Player : MonoBehaviour
     private void Update()
     {
         var h = Input.GetAxis("Horizontal");
-        var v = Input.GetAxis("Vertical");
-        _rigidbody.AddForce(h, 0, v);
+        _rigidbody.AddForce(h, 0, 0);
+
+        _pointText.text = $"{"Point"}:{_totalScore}";
     }
 
     private void OnTriggerEnter(Collider other)
