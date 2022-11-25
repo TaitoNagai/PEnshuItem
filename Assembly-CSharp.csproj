@@ -61,6 +61,8 @@
     <Compile Include="Assets\Scripts\ScoreUI.cs" />
     <Compile Include="Assets\Scripts\Item.cs" />
     <Compile Include="Assets\Scripts\ItemSpawner.cs" />
+    <Compile Include="Assets\AnimationTest\Scripts\SampleAnimation.cs" />
+    <Compile Include="Assets\AnimationTest\Scripts\AutoDoorAnimation.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
